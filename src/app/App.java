@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class App {
     static ChatClient client;
+    static String kamer;
     static MessageResponder responder;
 
     public static void main(String[] args) throws Exception {
@@ -40,9 +41,18 @@ public class App {
             System.out.println("\ts: stuurt een nieuw bericht naar de chatroom");
             break;
         }
+        case "r": {
+            System.out.println("De beschikbare kamers zijn: ");
+            System.out.println("\th: kamer1");
+            System.out.println("\th: kamer2");
+            System.out.println("\th: kamer3");
+            kamer = getUserInput("Welke kamer wilt u in?");
+
+            break;
+        }
         case "s": {
             String datatosend = getUserInput("Wat wilt u versturen?");
-            client.sendMessage(datatosend);
+            client.sendMessage(kamer, datatosend);
             break;
         }
         default: {

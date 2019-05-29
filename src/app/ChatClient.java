@@ -15,8 +15,8 @@ class ChatClient {
         newMessageProcessor = listener;
     }
 
-    public void sendMessage(String message){
-        System.out.println("message to send: " + message);
+    public void sendMessage(String kamer, String message){
+        System.out.println("message to " + kamer + " send: " + message);
         if (newMessageProcessor != null)
             newMessageProcessor.processNewMessage(message);
     }
