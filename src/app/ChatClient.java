@@ -14,7 +14,7 @@ class ChatClient {
     public void start(String name, IWantNewMessages listener) {
         this.name = name;
         connection = new WebSocketConnection(); 
-        connection.connect("ws://192.168.43.163:8085", listener);
+        connection.connect("ws://127.0.0.1:8085", listener);
     }
 
     public void sendMessage(String message) {
