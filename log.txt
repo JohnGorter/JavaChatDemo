@@ -1,0 +1,54 @@
+
+2019/06/14 16:14:17 Logging is set to true
+2019/06/14 16:14:37 SERVER SENDS: wim has entered the building
+2019/06/14 16:14:41 STATUS
+2019/06/14 16:14:41 SERVER SENDS: There are 3 persons in 1 rooms:
+	onbekend: 3 people (john, maarten, wim)
+You are in onbekend
+2019/06/14 16:14:47 Logging is set to true
+2019/06/14 16:14:51 ROOM:2
+2019/06/14 16:14:51 SERVER SENDS: john has entered Woonkamer
+2019/06/14 16:14:53 STATUS
+2019/06/14 16:14:53 SERVER SENDS: There are 3 persons in 2 rooms:
+	Woonkamer: 2 people (john, maarten)
+	onbekend: 1 people (wim)
+You are in Woonkamer
+2019/06/14 16:15:01 STATUS
+2019/06/14 16:15:01 SERVER SENDS: There are 3 persons in 2 rooms:
+	Woonkamer: 2 people (john, maarten)
+	onbekend: 1 people (wim)
+You are in Woonkamer
+2019/06/14 16:15:02 STATUS
+2019/06/14 16:15:02 SERVER SENDS: There are 3 persons in 2 rooms:
+	Woonkamer: 2 people (john, maarten)
+	onbekend: 1 people (wim)
+You are in Woonkamer
+2019/06/14 16:15:04 STATUS
+2019/06/14 16:15:04 SERVER SENDS: There are 3 persons in 2 rooms:
+	Woonkamer: 2 people (john, maarten)
+	onbekend: 1 people (wim)
+You are in Woonkamer
+2019/06/14 16:15:05 SERVER SENDS: wim has entered Woonkamer
+2019/06/14 16:15:05 STATUS
+2019/06/14 16:15:05 SERVER SENDS: There are 3 persons in 1 rooms:
+	Woonkamer: 3 people (john, maarten, wim)
+You are in Woonkamer
+2019/06/14 16:15:10 MESSAGE:hello guys
+2019/06/14 16:15:10 SERVER SENDS: john says: hello guys
+2019/06/14 16:15:18 SERVER SENDS: maarten says: hallo
+2019/06/14 16:15:21 SERVER SENDS: wim says:  heello
+2019/06/14 16:15:36 SERVER SENDS: maarten says: werkt als een trein
+2019/06/14 16:15:42 EXECUTEBAN2:maarten
+2019/06/14 16:15:42 SERVER SENDS: maarten is kicked out of this building
+2019/06/14 16:15:42 SERVER SENDS: maarten has left the building
+2019/06/14 16:15:46 onbekend commando!
+2019/06/14 16:15:46 SERVER SENDS: wim has left the building
+2019/06/14 16:15:49 EXECUTEBAN2:wim
+2019/06/14 16:15:49 SERVER SENDS: maarten has entered the building
+2019/06/14 16:15:53 EXECUTEBAN2:maarten
+2019/06/14 16:15:53 SERVER SENDS: maarten is kicked out of this building
+2019/06/14 16:15:53 SERVER SENDS: maarten has left the building
+2019/06/14 16:15:55 STATUS
+2019/06/14 16:15:55 SERVER SENDS: There are 1 persons in 1 rooms:
+	Woonkamer: 1 people (john)
+You are in Woonkamer

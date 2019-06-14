@@ -1,35 +1,25 @@
 package app;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
-class ChatClient implements IWantNewMessages {
 
+class ChatClient {
+    
     ChatRoom room;
     String name;
-    IWantNewMessages newMessageProcessor;
     WebSocketConnection connection;
 
-    public void start(String name) {
+    public void start(String name, IWantNewMessages listener) {
         this.name = name;
         connection = new WebSocketConnection(); 
-        connection.connect("ws://172.16.38.63:8085", this);
+        connection.connect("ws://192.168.43.163:8085", listener);
     }
 
-    public void addMessageReceiveListener(IWantNewMessages listener){
-        newMessageProcessor = listener;
+    public void sendMessage(String message) {
+        connection.sendMessage(message);
     }
-
-    public void sendMessage(String kamer, String message){
-        System.out.println("message to " + kamer + " send: " + message);
-        connection.sendMessage(name + " says: " + message);
-    }
-
-    @Override
-    public void processNewMessage(String message) {
-        if (newMessageProcessor != null) 
-            newMessageProcessor.processNewMessage(message);
-    }
-
-    
 }
 
 
